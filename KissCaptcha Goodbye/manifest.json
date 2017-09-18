@@ -11,12 +11,12 @@
 
     {
       "all_frames": true,
-      "js": [ "js/jquery/jquery.js", "js/AreYouHuman.js", "js/js/md5.js" ],
+      "js": [ "js/jquery/jquery.js", "js/js/md5.js", "js/js/patch-worker.js", "js/js/threadpool.js", "js/AreYouHuman.js" ],
       "matches": [ "*://*.kissanime.ru/Special/AreYouHuman2*" ],
       "run_at": "document_start"
     }
   ],
-  "description": "Quickly answers most of those annoying CAPTCHA questions on Kissanime.",
+  "description": "Quickly answers 98%+ of those annoying CAPTCHA questions on Kissanime.",
   "icons": {
     "128": "icon.png"
   },
@@ -27,5 +27,5 @@
   "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "0.9.0",
   "version_name": "0.9.0",
-  "web_accessible_resources": [ "js/*" ]
+  "web_accessible_resources": [ "js/*", "js/ImageHashJob.js" ]
 }
