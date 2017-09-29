@@ -11,8 +11,14 @@
 
     {
       "all_frames": true,
-      "js": [ "js/jquery/jquery.js", "js/js/md5.js", "js/js/patch-worker.js", "js/js/threadpool.js", "js/AreYouHuman.js" ],
+      "js": [ "js/jquery/jquery.js", "js/js/md5.js", "js/js/patch-worker.js", "js/js/threadpool.js", "js/Answers.js", "js/AreYouHuman.js" ],
       "matches": [ "*://*.kissanime.ru/Special/AreYouHuman2*" ],
+      "run_at": "document_start"
+    },
+    {
+      "all_frames": true,
+      "js": [ "js/jquery/jquery.js", "js/js/md5.js", "js/js/patch-worker.js", "js/js/threadpool.js", "js/Answers.js", "js/video.js" ],
+      "matches": [ "*://*.kissanime.ru/Anime/*/*" ],
       "run_at": "document_start"
     }
   ],
@@ -21,11 +27,11 @@
     "128": "icon.png"
   },
   "manifest_version": 2,
-  "minimum_chrome_version": "45.0.2454",
+  "minimum_chrome_version": "55.0.2883",
   "name": "KissCaptcha Goodbye",
   "permissions": [ "activeTab" ],
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "0.9.1",
-  "version_name": "0.9.1",
-  "web_accessible_resources": [ "js/*", "js/ImageHashJob.js" ]
+  "version": "0.9.2",
+  "version_name": "0.9.2",
+  "web_accessible_resources": [ "js/ImageHashJob.js" ]
 }
