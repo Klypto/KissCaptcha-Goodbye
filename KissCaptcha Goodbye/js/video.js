@@ -6,22 +6,38 @@ var countSelect = 0;
 var choosenIndex = "";
 var vid;
 
-var preloadedCaptcha = false;
+var KeepAliveCaptcha = false;
 
 function videoTimeUpdate()
 {
-    if (!preloadedCaptcha && (vid.currentTime / vid.duration) > .92)
+    
+
+    if ((vid.currentTime / vid.duration) > .92)
     {
-        preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
-        preloadedCaptcha = true;
-        console.log("preloaded Captcha");
+        if (!preloadCaptcha)
+        {
+            // we're near the end of the video
+            preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
+            KeepAliveCaptcha = true;
+        }
     }
+    else
+    {
+        KeepAliveCaptcha = false;
+    }
+}
+
+function CheckCaptcha()
+{
+    
 }
 
 //load next video
 
 function preloadCaptcha(url)
 {
+    console.log("preloaded Captcha");
+
     $.ajax({
         url: url,
         type: 'GET',
@@ -31,6 +47,11 @@ function preloadCaptcha(url)
             ProcessData(data);
         }
     });
+    if (KeepAliveCaptcha)
+    {
+        //Keep refreshing captcha every 2 minutes
+        setTimeout(preloadCaptcha(url), 120000);
+    }
 }
 
 
@@ -96,7 +117,7 @@ function processhash(index, md5)
     console.log("Index " + index + ": " + md5);
     var check1 = false;
     var check2 = false;
-   
+
     if (TheAnswers.hasOwnProperty(answer1) && TheAnswers.hasOwnProperty(answer2))
     {
 
@@ -128,7 +149,7 @@ function processhash(index, md5)
                     contentType: 'application/x-www-form-urlencoded',
                     data: { reUrl: next_link, answerCap: choosenIndex },
                     timeout: 10000,
-                    success: function(response)
+                    success: function (response)
                     {
                     }
                 });

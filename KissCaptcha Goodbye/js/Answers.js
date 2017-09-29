@@ -146,4 +146,6 @@ TheAnswers["girl, tail"] = ["6bf97ffaef6462f256ab3cc5cf4982c5"];
 TheAnswers["girl, yellow hair"] = ["6bf97ffaef6462f256ab3cc5cf4982c5"];
 TheAnswers["bear, panda"] = ["db7e4a9d2d11302ae21e7b2647055785"];
 TheAnswers["yellow, angry"] = ["76c0e43f3da88cc4a7ca54e3a373fe0c"];
+TheAnswers["rabbit, blue"] = ["17c2d308f26907e8e1421f6c31d50b4a"];
 TheAnswers["xxxxxxxxxxxxx"] = ["11111111111111111111"];
+
