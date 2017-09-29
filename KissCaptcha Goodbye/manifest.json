@@ -22,13 +22,13 @@
       "run_at": "document_start"
     }
   ],
-  "description": "Quickly answers 98%+ of those annoying CAPTCHA questions on Kissanime.",
+  "description": "BETA - Quickly answers 98%+ of those annoying CAPTCHA questions on Kissanime.",
   "icons": {
     "128": "icon.png"
   },
   "manifest_version": 2,
   "minimum_chrome_version": "55.0.2883",
-  "name": "KissCaptcha Goodbye",
+  "name": "KissCaptcha Goodbye (BETA)",
   "permissions": [ "activeTab" ],
   "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "0.9.2",

@@ -72,7 +72,6 @@ function ProcessData(data)
     answer1 = spans.eq(0).text().trim();
     answer2 = spans.eq(1).text().trim();
     var images = $(data).find('#formVerify img');
-    console.log(images[0]);
     for (var i = 0; i < images.length; i++)
     {
         var wp = new WorkPackage();
