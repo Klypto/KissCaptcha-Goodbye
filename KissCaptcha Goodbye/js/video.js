@@ -14,7 +14,7 @@ function videoTimeUpdate()
 
     if ((vid.currentTime / vid.duration) > .92)
     {
-        if (!preloadCaptcha)
+        if (!KeepAliveCaptcha)
         {
             // we're near the end of the video
             preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
