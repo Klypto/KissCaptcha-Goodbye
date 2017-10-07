@@ -17,8 +17,8 @@ function videoTimeUpdate()
         if (!KeepAliveCaptcha)
         {
             // we're near the end of the video
-            preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
             KeepAliveCaptcha = true;
+            preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
         }
     }
     else
@@ -32,11 +32,10 @@ function CheckCaptcha()
     
 }
 
-//load next video
-
 function preloadCaptcha(url)
 {
     console.log("preloaded Captcha");
+    console.log("KeepAliveCaptcha: " + KeepAliveCaptcha);
 
     $.ajax({
         url: url,
@@ -50,7 +49,7 @@ function preloadCaptcha(url)
     if (KeepAliveCaptcha)
     {
         //Keep refreshing captcha every 2 minutes
-        setTimeout(preloadCaptcha(url), 120000);
+        setTimeout(preloadCaptcha, 120000, url);
     }
 }
 
