@@ -77,7 +77,7 @@ self.onmessage = function (event)
     {
         //console.log('Posting md5 back to main script: ' + wp.hash);
         self.postMessage(wp);
-        self.close();
+        //self.close();
     });
 }
 

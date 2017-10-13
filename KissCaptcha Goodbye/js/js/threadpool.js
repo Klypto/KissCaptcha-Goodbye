@@ -40,7 +40,7 @@ function Pool(size) {
             var workerTask = _this.taskQueue.shift();
             workerThread.run(workerTask);
         } else {
-            _this.taskQueue.push(workerThread);
+            _this.workerQueue.push(workerThread);
         }
     }
 }
