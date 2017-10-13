@@ -10,7 +10,7 @@ var KeepAliveCaptcha = false;
 
 function videoTimeUpdate()
 {
-    
+
 
     if ((vid.currentTime / vid.duration) > .92)
     {
@@ -29,7 +29,7 @@ function videoTimeUpdate()
 
 function CheckCaptcha()
 {
-    
+
 }
 
 function preloadCaptcha(url)
@@ -57,8 +57,12 @@ function preloadCaptcha(url)
 $(document).ready(function ()
 {
     vidcheck();
-    next_link = encodeURIComponent(document.getElementById("btnNext").parentElement.href);
-    preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
+    var element = document.getElementById("btnNext");
+    if (typeof (element) != "undefined")
+    {
+        next_link = encodeURIComponent(document.getElementById("btnNext").parentElement.href);
+        preloadCaptcha("http://kissanime.ru/Special/AreYouHuman2?reUrl=" + next_link);
+    }
 });
 
 
