@@ -20,13 +20,7 @@
       "js": [ "js/jquery/jquery.js", "js/js/md5.js", "js/js/patch-worker.js", "js/js/threadpool.js", "js/Answers.js", "js/video.js" ],
       "matches": [ "*://*.kissanime.ru/Anime/*/*" ],
       "run_at": "document_start"
-    }//,
-    //{
-    //  "all_frames": true,
-    //  "js": [ "js/AnimeInfo.js" ],
-    //  "matches": [ "*://*.kissanime.ru/Anime/*" ],
-    //  "run_at": "document_start"
-    //}
+    }
   ],
   "description": "Quickly answers 98%+ of those annoying CAPTCHA questions on Kissanime.",
   "icons": {
@@ -37,7 +31,7 @@
   "name": "KissCaptcha Goodbye",
   "permissions": [ "activeTab", "notifications" ],
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "0.9.3.1000",
-  "version_name": "0.9.3.1000",
+  "version": "0.9.3.1001",
+  "version_name": "0.9.3.1001",
   "web_accessible_resources": [ "js/ImageHashJob.js" ]
 }
