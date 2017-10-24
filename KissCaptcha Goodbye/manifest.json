@@ -31,6 +31,6 @@
   "name": "KissCaptcha Goodbye",
   "permissions": [ "activeTab", "notifications" ],
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "0.9.3.1003",
+  "version": "0.9.3.1004",
   "web_accessible_resources": [ "js/ImageHashJob.js" ]
 }

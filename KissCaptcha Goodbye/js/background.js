@@ -13,21 +13,15 @@ chrome.runtime.onInstalled.addListener(function (details)
         message: "New Features:",
         contextMessage: "Please report issues, I will fix them if found",
         items: [
-            { title: "Solve 'Next Video' captcha in background:", message: "" },
-            { title: "", message: " - when a video page is first loaded" },
-            { title: "", message: " - when a video is at 92%+" },
+            { title: "Adjusted video pre-captcha from 92->90 %:", message: "" },
             { title: "Added Some Missing Answers", message: "" },
-            { title: "Added Update Notification", message: "" },
         ],
         iconUrl: "icon.png",
         isClickable: true,
         requireInteraction: true
     }
-
     chrome.notifications.create("KCG-update", opt, function (id)
     {
-
-
         timer = setTimeout(function () { chrome.notifications.clear(id); }, 8000);
     });
 });
@@ -42,5 +36,4 @@ chrome.notifications.onClicked.addListener(function (id)
             }
         default:
     }
-
 });
