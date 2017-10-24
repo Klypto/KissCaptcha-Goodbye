@@ -32,6 +32,6 @@
   "permissions": [ "activeTab", "notifications" ],
   "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "0.9.3.1001",
-  "version_name": "0.9.3.1001",
+  "version_name": "0.9.3.1002",
   "web_accessible_resources": [ "js/ImageHashJob.js" ]
 }
