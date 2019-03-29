@@ -1,6 +1,6 @@
 # Discontinued
 
-They started banning users for using adblock so I lost interest in using their site or updating this software to match the new captcha changes.
+They started banning users for using adblock so I lost interest in using their site or updating this software to match the new captcha changes.  Use a different site, they aren't worth it.
 
 
 # KissCaptcha-Goodbye
