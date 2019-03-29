@@ -1,3 +1,8 @@
+# Discontinued
+
+They started banning users for using adblock so I lost interest in using their site or updating this software to match the new captcha changes.
+
+
 # KissCaptcha-Goodbye
 This little script will automatically answer and submit most of the CAPTCHA question pairs on KissAnime for you quickly.
 
@@ -11,9 +16,7 @@ Recent Changes:
  - Minor formatting style change applied on the code.  Blows up git change log but whatever
 
 
-Planned Features:
-
- - Automatically complete captchas for the next video page in the background.
- - Learn new images automatically
-
 The captchas on KissAnime will stop random bots but would have less success than a wet paper towel to to get in the way of anyone who is making a targeted attack on the site.  However, it is  HIGHLY successful at annoying it's users.
+
+
+
