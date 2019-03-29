@@ -4,7 +4,7 @@ They started banning users for using adblock so I lost interest in using their s
 
 
 # KissCaptcha-Goodbye
-This little script will automatically answer and submit most of the CAPTCHA question pairs on KissAnime for you quickly.
+This chrome extension will automatically answer and submit most of the CAPTCHA question pairs on KissAnime for you quickly.
 
 
 Nearly all answer pairs are included, but there's a chance that I missed one since I did it manually. In the event that it cannot correctly answer for you, it will try to eliminate what it thinks is the wrong answer by darkening them.  Any missing matches will be added in future updates.
